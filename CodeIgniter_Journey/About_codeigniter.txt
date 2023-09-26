@@ -1,0 +1,28 @@
+CodeIgniter:
+Version 3 
+
+Error Faced:
+A PHP Error was encountered
+Severity: 8192
+
+Message: Creation of dynamic property CI_Router::$uri is deprecated
+
+Filename: core/Router.php
+
+Line Number: 129
+
+Backtrace:
+
+File: C:\Tarunesh_xampp\htdocs\CodeIgniter\index.php
+Line: 315
+Function: require_once
+
+Rectification:
+Deprecated errors indicate that the functions you're using are outdated and no longer recommended for use,
+as they might not be supported in future PHP versions. 
+ These errors can potentially cause issues like slow website performance.
+
+PHP 8.2: AllowDynamicProperties Attribute
+#[AllowDynamicProperties] is a new attribute added in PHP 8.2, that avoids the deprecation notice on dynamic properties.
+#[AllowDynamicProperties] property is declared in the global namespace. It does not accept any parameters.
+When a class is declared with the #[AllowDynamicProperties] attribute, it no longer emits dynamic property deprecation
